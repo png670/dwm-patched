@@ -1,5 +1,4 @@
-<<<<<<< HEAD
+
 # my dwm configuration
 =======
 **Note: You must install ``libxft-bgra`` from the AUR to use this. It is recommended to use my dwmblocks and dmenu configs with this. My statusbar scripts for dwmblocks can be found in the statusbar directory. (This is all done automatically with JARBS)**
->>>>>>> 3b8aa9d (add dwm)
