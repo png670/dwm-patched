@@ -14,7 +14,7 @@
           overlays = [
             (final: prev: {
               dwm = prev.dwm.overrideAttrs (oldAttrs: rec {
-                version = "master";
+                version = "mainr";
                 src = ./.;
               });
             })
@@ -25,7 +25,7 @@
         apps = {
           dwm = {
             type = "app";
-            program = "${defaultPackage}/bin/kitty";
+            program = "${defaultPackage}/bin/st";
           };
         };
 
