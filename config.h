@@ -151,7 +151,7 @@ static Key keys[] = {
 	{ MODKEY,			XK_Tab,		view,		 {0} },
 	{ MODKEY,			XK_q,		killclient,	 {0} },
         { MODKEY,                       XK_k,           spawn,           SHCMD("thunar") },
-        { MODKEY|ShiftMask,             XK_n,           spawn,           SHCMD("$TERMINAL -e $EDITOR /etc/nixos/configuration.nix ") },
+        { MODKEY|ShiftMask,             XK_n,           spawn,           SHCMD("kitty -e nvim ~/nixos-config/nixos/packages.nix") },
 
 	{ MODKEY|ShiftMask,             XK_backslash,   killunsel,       {0} },
 	{ MODKEY,			XK_r,		setlayout, 	 {.v = &layouts[0]} }, /* tile */
@@ -244,13 +244,11 @@ static Key keys[] = {
 
 	/* Other keybinds */
  	{ MODKEY, 			XK_b,		spawn,		 {.v = (const char*[]){ BROWSER, NULL } } },
- 	{ MODKEY,			XK_n,		spawn,		 {.v = (const char*[]){ TERMINAL, "-e", "lfrun", NULL } } },
+ 	{ MODKEY,			XK_n,		spawn,		 {.v = (const char*[]){ TERMINAL, "-e", "lf", NULL } } },
  	{ MODKEY,			XK_d,		spawn,		 {.v = (const char*[]){ "dmenu_run", NULL } } },
- 	{ MODKEY|ShiftMask,		XK_q,		spawn,		 {.v = (const char*[]){ "dmlogout", NULL } } },
+ 	{ MODKEY|ShiftMask,		XK_q,		spawn,		 {.v = (const char*[]){ "quit", NULL } } },
  	{ MODKEY|ShiftMask,		XK_d,	        spawn,		 {.v = (const char*[]){ "dmkill", NULL } } },
  	{ MODKEY,			XK_numbersign,  spawn,		 {.v = (const char*[]){ "dmnote", NULL } } },
-	{ MODKEY|ShiftMask,		XK_numbersign,	spawn,		 SHCMD("$TERMINAL -e $EDITOR ~/dox/.notes/notes.md") },
-	{ MODKEY|ControlMask,		XK_numbersign,  spawn,		 SHCMD("$TERMINAL -e $EDITOR ~/dox/.notes/mcnotes.md") },
 };
 
 /* Button definitions */
