@@ -21,10 +21,10 @@ enum showtab_modes { showtab_never, showtab_auto, showtab_nmodes, showtab_always
 static const int showtab      = showtab_auto;	/* Default tab bar show mode */
 
 static char *fonts[]          = { "Monospace:size=10", "JoyPixels:pixelsize=11:antialias=true:autohint=true" };
-static char normbgcolor[]           = "#1d2021";
-static char normbordercolor[]       = "#1d2021";
+static char normbgcolor[]           = "#191724";
+static char normbordercolor[]       = "#191724";
 static char normfgcolor[]           = "#458588";
-static char selfgcolor[]            = "#1d2021";
+static char selfgcolor[]            = "#191724";
 static char selbordercolor[]        = "#458588";
 static char selbgcolor[]            = "#458588";
 static char *colors[][3] = {
