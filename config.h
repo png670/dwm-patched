@@ -23,10 +23,10 @@ static const int showtab      = showtab_auto;	/* Default tab bar show mode */
 static char *fonts[]          = { "Monospace:size=10", "JoyPixels:pixelsize=11:antialias=true:autohint=true" };
 static char normbgcolor[]           = "#191724";
 static char normbordercolor[]       = "#191724";
-static char normfgcolor[]           = "#458588";
+static char normfgcolor[]           = "#6e6a86";
 static char selfgcolor[]            = "#191724";
-static char selbordercolor[]        = "#458588";
-static char selbgcolor[]            = "#458588";
+static char selbordercolor[]        = "#6e6a86";
+static char selbgcolor[]            = "#6e6a86";
 static char *colors[][3] = {
        /*               fg           bg           border          */
        [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
